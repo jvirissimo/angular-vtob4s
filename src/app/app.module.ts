@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import {DashboardModule} from './dashboard/dashboard.module';
-
+import { LoginModule } from './login/login.module';
+import { DashboardModule } from './dashboard/dashboard.module';
 import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
 
 const routes: Routes = [
   {
@@ -15,8 +15,8 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, DashboardModule ],
-  declarations: [ AppComponent, HelloComponent ],
+  imports:      [ BrowserModule, FormsModule, LoginModule, DashboardModule ],
+  declarations: [ AppComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
