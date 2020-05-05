@@ -6,13 +6,13 @@ import { LoginModule } from './login/login.module';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { AppComponent } from './app.component';
 
-const routes: Routes = [
-  {
-    path: '',
-    redirectTo: '/dashboard',
-    pathMatch: 'full'
-  }
-];
+// const routes: Routes = [
+//   {
+//     path: '',
+//     redirectTo: '/dashboard',
+//     pathMatch: 'full'
+//   }
+// ];
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, LoginModule, DashboardModule ],
